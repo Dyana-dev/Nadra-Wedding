@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nad & Dra Wedding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- ══ HERO ══ -->
+    <section id="hero" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-center text-white">
+        <p class="hero-pre">Kepada Bapak / Ibu / Saudara/i</p>
+        <div class="hero-ornament"></div>
+        <h1 class="hero-names">Indra Kencana<br><span class="amp">&</span><br>Nadia Laura</h1>
+        <div class="hero-ornament"></div>
+        <p class="hero-sub">Akan Melaksanakan Resepsi Pernikahan</p>
+        <div class="countdown-wrap">
+          <div class="timebox"><h2 id="days">00</h2><p>Hari</p></div>
+          <div class="timebox"><h2 id="jam">00</h2><p>Jam</p></div>
+          <div class="timebox"><h2 id="menit">00</h2><p>Menit</p></div>
+          <div class="timebox"><h2 id="detik">00</h2><p>Detik</p></div>
+        </div>
+        <a href="#home" class="btn-gold mt-4 d-inline-block">Buka Undangan</a>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ══ NAVBAR ══ -->
+    <nav class="navbar sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Nadra Wedding</a>
+
+        <!-- DESKTOP: link langsung tampil di navbar (md ke atas) -->
+        <ul class="navbar-nav d-none d-md-flex flex-row ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#info">Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#story">Story</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rsvp">RSVP</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gift">Gift</a></li>
+        </ul>
+
+        <!-- MOBILE: tombol hamburger (hanya muncul di bawah md) -->
+        <button class="navbar-toggler d-md-none" type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Offcanvas MOBILE — di luar <nav> agar tidak ter-clip -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-family:'Sacramento',cursive;font-size:1.8rem;color:var(--gold-dark)">Nadra Wedding</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link offcanvas-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link offcanvas-link" href="#info">Info</a></li>
+          <li class="nav-item"><a class="nav-link offcanvas-link" href="#story">Story</a></li>
+          <li class="nav-item"><a class="nav-link offcanvas-link" href="#galery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link offcanvas-link" href="#rsvp">RSVP</a></li>
+          <li class="nav-item"><a class="nav-link offcanvas-link" href="#gift">Gift</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ══ HOME / COUPLE ══ -->
+    <section id="home" class="section-pad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center reveal">
+            <span class="section-tag">Pernikahan</span>
+            <h2 class="section-title">Acara Pernikahan</h2>
+            <div class="divider-gold"></div>
+            <p>Selasa, <strong>17 November 2026</strong> di Gianyar, Bali.<br>
+              Dengan segala hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu.</p>
+          </div>
+        </div>
+        <div class="row couple mt-5 justify-content-center">
+          <div class="col-12 col-md-5 mb-5 text-center reveal-left">
+            <div class="couple-photo-wrap">
+              <img src="img/foto-pria.png" class="couple-photo" alt="Indra Kencana">
+            </div>
+            <h3 class="couple-name">Indra Kencana</h3>
+            <p>Lahir sebagai anak ke-2 dari 2 bersaudara, telah meraih gelar S1 dan S2, kini sedang mengejar gelar S3.</p>
+            <p class="couple-parents">Putra dari <strong>Bpk. Made Dianata</strong><br>dan <strong>Ibu Wayan Arunia</strong></p>
+          </div>
+          <div class="col-12 col-md-2 d-flex align-items-center justify-content-center mb-5">
+            <div class="amp-center reveal">&</div>
+          </div>
+          <div class="col-12 col-md-5 mb-5 text-center reveal-right">
+            <div class="couple-photo-wrap">
+              <img src="img/foto-wanita.png" class="couple-photo" alt="Nadia Laura">
+            </div>
+            <h3 class="couple-name">Nadia Laura</h3>
+            <p>Lahir sebagai anak ke-1 dari 2 bersaudara, memiliki bisnis di bidang kosmetik dan bergelar Sarjana Keperawatan.</p>
+            <p class="couple-parents">Putri dari <strong>Bpk. Putu Pande</strong><br>dan <strong>Ibu Kadek Widi Artika</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ INFO ══ -->
+    <section id="info" class="section-pad info-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center reveal">
+            <span class="section-tag">Lokasi & Waktu</span>
+            <h2 class="section-title">Informasi Acara</h2>
+            <div class="divider-gold"></div>
+            <p class="alamat"><i class="bi bi-geo-alt-fill me-2"></i>Taman Prakerti Bhuana, Beng,<br>Kec. Gianyar, Kabupaten Gianyar, Bali 80513</p>
+            <a href="https://share.google/RFiUYfBfxKMRmuPyf" target="_blank" class="btn-gold mt-3 d-inline-block">
+              <i class="bi bi-map me-2"></i>Buka Peta
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-5 col-10 reveal">
+            <div class="event-card text-center">
+              <div class="event-card-header">Resepsi Pernikahan</div>
+              <div class="event-card-body">
+                <div class="event-row">
+                  <i class="bi bi-clock-fill"></i>
+                  <div>
+                    <div class="event-label">Waktu</div>
+                    <div class="event-val">06.00 WIB – Selesai</div>
+                  </div>
+                </div>
+                <div class="event-row">
+                  <i class="bi bi-calendar-fill"></i>
+                  <div>
+                    <div class="event-label">Tanggal</div>
+                    <div class="event-val">Selasa, 17 November 2026</div>
+                  </div>
+                </div>
+              </div>
+              <div class="event-card-footer">Diharapkan tetap kondusif demi kelancaran acara 🙏</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ STORY / TIMELINE ══ -->
+    <section id="story" class="section-pad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center reveal">
+            <span class="section-tag">Dari Keraguan, Menuju Kepastian</span>
+            <h2 class="section-title">Cerita Kami</h2>
+            <div class="divider-gold"></div>
+            <p>Segalanya berawal dari pertemuan sederhana di masa putih abu-abu</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li class="reveal">
+                <div class="timeline-image" style="background-image: url(img/pertemuan-pertama.jpeg);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertemuan Pertama</h3>
+                    <span>3 Februari 2015</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Kami pertama kali dipertemukan saat duduk di bangku SMA, bukan karena pilihan kami, melainkan karena kehendak orang tua. Seiring waktu, jalan kami sempat terpisah, membawa kami pada kehidupan dan proses masing-masing.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-reverse reveal">
+                <div class="timeline-image" style="background-image: url(img/pertemuan-kedua.jpeg);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Saling Dipertemukan</h3>
+                    <span>08 Juli 2019</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Namun, apa yang pernah dipertemukan, ternyata tidak benar-benar hilang. Setelah melewati perjalanan masing-masing, kami kembali dipertemukan — kali ini bukan karena arahan siapa pun, melainkan karena keinginan untuk saling menemukan kembali.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="reveal">
+                <div class="timeline-image" style="background-image: url(img/layer-6.jpg);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>07 November 2026</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Dengan penuh keyakinan, kami melangkah lebih jauh — mempertemukan keluarga, hingga akhirnya mengikat janji dalam sebuah pertunangan. Dari situlah kami memahami bahwa hubungan ini bukan tentang masa lalu, melainkan tentang masa depan yang ingin kami jalani bersama.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ GALLERY ══ -->
+    <section id="galery" class="section-pad info-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center reveal">
+            <span class="section-tag">Foto Prewed Kami</span>
+            <h2 class="section-title">Galeri Foto</h2>
+            <div class="divider-gold"></div>
+            <p>Ketika Kami Berhasil Berjuang Bersama</p>
+          </div>
+        </div>
+        <div class="gallery-grid reveal">
+          <div class="gallery-item gi-tall" style="background-image:url(img/Foto-Prewed.jpg)"><div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div></div>
+          <div class="gallery-item" style="background-image:url(img/layer-2.jpg)"><div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div></div>
+          <div class="gallery-item" style="background-image:url(img/layer-3.jpg)"><div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div></div>
+          <div class="gallery-item gi-wide" style="background-image:url(img/layer-4.jpg)"><div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div></div>
+          <div class="gallery-item" style="background-image:url(img/layer-5.jpg)"><div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ RSVP ══ -->
+    <section id="rsvp" class="section-pad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7 col-10 text-center reveal">
+            <span class="section-tag">Konfirmasi Kehadiran</span>
+            <h2 class="section-title">RSVP & Ucapan</h2>
+            <div class="divider-gold"></div>
+          </div>
+          <div class="col-md-7 col-10 reveal">
+            <div class="rsvp-form">
+              <div class="mb-3">
+                <label class="form-label-custom">Nama Lengkap</label>
+                <input type="text" id="inp-nama" class="input-custom" placeholder="Masukkan nama Anda">
+              </div>
+              <div class="mb-3">
+                <label class="form-label-custom">Kehadiran</label>
+                <select id="inp-hadir" class="input-custom">
+                  <option value="">— Pilih —</option>
+                  <option value="✅ Hadir">✅ Insya Allah Hadir</option>
+                  <option value="❌ Tidak Hadir">❌ Tidak Dapat Hadir</option>
+                  <option value="🤔 Masih Ragu">🤔 Masih Ragu</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label-custom">Ucapan & Do'a</label>
+                <textarea id="inp-ucapan" class="input-custom" rows="4" placeholder="Tulis ucapan tulus Anda di sini…"></textarea>
+              </div>
+              <button id="btn-kirim" class="btn-gold w-100">Kirim Ucapan ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Messages Wall -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-7 col-10">
+            <h5 class="text-center mb-4" style="font-family:'Sacramento';font-size:1.8rem;color:var(--gold)">Ucapan & Doa 💌</h5>
+            <div id="messages-wall"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ GIFT ══ -->
+    <section id="gift" class="section-pad info-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center reveal">
+            <span class="section-tag">Hadiah Pernikahan</span>
+            <h2 class="section-title">Wedding Gift</h2>
+            <div class="divider-gold"></div>
+            <p>Doa dan kehadiran Anda adalah hadiah terbesar bagi kami.<br>Namun jika ingin memberikan hadiah, berikut informasinya:</p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4 g-4">
+          <div class="col-md-4 col-10 reveal">
+            <div class="gift-card text-center">
+              <i class="bi bi-bank2 gift-icon"></i>
+              <h5>Transfer DANA</h5>
+              <p class="gift-bank">DANA</p>
+              <div class="gift-rekening" id="rek-dana">08216338814</div>
+              <p class="gift-name">a.n. Indra Kencana</p>
+              <button class="btn-copy" onclick="copyRek('rek-dana')"><i class="bi bi-clipboard me-1"></i>Salin Nomor</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-10 reveal">
+            <div class="gift-card text-center">
+              <i class="bi bi-bank2 gift-icon"></i>
+              <h5>Transfer DANA</h5>
+              <p class="gift-bank">DANA</p>
+              <div class="gift-rekening" id="rek-dana">08216338814</div>
+              <p class="gift-name">a.n. Nadia Laura</p>
+              <button class="btn-copy" onclick="copyRek('rek-dana')"><i class="bi bi-clipboard me-1"></i>Salin Nomor</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="footer text-center">
+      <div class="footer-names">Indra & Nadia</div>
+      <p>Selasa, 17 November 2026 · Gianyar, Bali</p>
+      <p class="mt-2">Dibuat dengan 💛 penuh cinta</p>
+    </footer>
+
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close" id="lb-close">&times;</span>
+      <img id="lb-img" src="" alt="">
+    </div>
+
+    <!-- ══ MUSIC PLAYER ══ -->
+     <audio id="bg-audio" loop preload="auto" src="audio/lagu.mp3" ></audio>
+
+    <!-- Tombol musik pojok kiri bawah -->
+    <div id="music-player">
+      <button id="music-btn" title="Play / Pause musik">
+        <i class="bi bi-music-note-beamed" id="music-icon"></i>
+      </button>
+      <div id="music-info">
+        <span id="music-title">Lagu Pernikahan 🎵</span>
+        <div id="eq-bars">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
