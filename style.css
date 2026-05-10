@@ -732,6 +732,32 @@ h1, h2, h3 { font-family: 'Sacramento', cursive; }
 #eq-bars.playing span:nth-child(2) { animation: eq 0.8s 0.1s ease infinite alternate; }
 #eq-bars.playing span:nth-child(3) { animation: eq 0.5s 0.2s ease infinite alternate; }
 #eq-bars.playing span:nth-child(4) { animation: eq 0.9s 0.05s ease infinite alternate; }
+
+@media (max-width: 576px){
+
+  .countdown-wrap{
+    flex-wrap: nowrap;
+    gap: 6px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .timebox{
+    min-width: 68px;
+    padding: 12px 6px;
+  }
+
+  .timebox h2{
+    font-size: 1.9rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .timebox p{
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+}
 @keyframes eq {
   from { height: 3px; }
   to   { height: 14px; }
