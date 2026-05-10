@@ -732,7 +732,18 @@ h1, h2, h3 { font-family: 'Sacramento', cursive; }
 #eq-bars.playing span:nth-child(2) { animation: eq 0.8s 0.1s ease infinite alternate; }
 #eq-bars.playing span:nth-child(3) { animation: eq 0.5s 0.2s ease infinite alternate; }
 #eq-bars.playing span:nth-child(4) { animation: eq 0.9s 0.05s ease infinite alternate; }
+}
+@keyframes eq {
+  from { height: 3px; }
+  to   { height: 14px; }
+}
 
+/* ══ KEYFRAMES ══ */
+@keyframes fadeIn       { from { opacity: 0; }                         to { opacity: 1; } }
+@keyframes fadeInDown   { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: none; } }
+@keyframes fadeInUp     { from { opacity: 0; transform: translateY(20px); }  to { opacity: 1; transform: none; } }
+@keyframes scaleIn      { from { opacity: 0; transform: scale(0.85); } to { opacity: 1; transform: scale(1); } }
+@keyframes popIn        { from { opacity: 0; transform: scale(0.9); }  to { opacity: 1; transform: scale(1); } }
 @media (max-width: 576px){
 
   .countdown-wrap{
@@ -756,16 +767,3 @@ h1, h2, h3 { font-family: 'Sacramento', cursive; }
     font-size: 9px;
     letter-spacing: 1px;
   }
-
-}
-@keyframes eq {
-  from { height: 3px; }
-  to   { height: 14px; }
-}
-
-/* ══ KEYFRAMES ══ */
-@keyframes fadeIn       { from { opacity: 0; }                         to { opacity: 1; } }
-@keyframes fadeInDown   { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: none; } }
-@keyframes fadeInUp     { from { opacity: 0; transform: translateY(20px); }  to { opacity: 1; transform: none; } }
-@keyframes scaleIn      { from { opacity: 0; transform: scale(0.85); } to { opacity: 1; transform: scale(1); } }
-@keyframes popIn        { from { opacity: 0; transform: scale(0.9); }  to { opacity: 1; transform: scale(1); } }
