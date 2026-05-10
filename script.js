@@ -84,7 +84,7 @@ const sampleMessages = [
   {
     nama: 'Keluarga Besar Santoso',
     hadir: '✅ Hadir',
-    ucapan: 'Barakallahu lakuma wa baraka alaikuma wa jama\'a bainakuma fii khair. Semoga menjadi keluarga yang sakinah, mawaddah, wa rahmah. Aamiin 🤲'
+    ucapan: 'Selamat menjalin hidup baru, semoga jalannya selalu dilancarkan'
   },
   {
     nama: 'Ibu Sri Wahyuni',
